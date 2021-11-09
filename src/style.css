@@ -1,0 +1,46 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.table {
+  overflow: hidden;
+  box-shadow: 2px 2px black;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 5em;
+}
+
+.table td {
+  text-align: center;
+}
+
+#recent-scores {
+  max-width: 30%;
+  min-width: 25%;
+}
+
+.btn {
+  box-shadow: 2px 2px black;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.input {
+  box-shadow: 2px 2px black;
+  
+}
+
+.input:hover {
+  background-color: #252825; /* Green */
+  color: white;
+}
+
+.name-input {
+  margin-bottom: 12px;
+}
