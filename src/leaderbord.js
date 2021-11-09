@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 const mainUI = () => {
   const list = document.querySelector('.container');
   list.innerHTML = `
