@@ -27,13 +27,12 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #4CAF50; /* Green */
+  background-color: #4caf50; /* Green */
   color: white;
 }
 
 .input {
   box-shadow: 2px 2px black;
-  
 }
 
 .input:hover {
