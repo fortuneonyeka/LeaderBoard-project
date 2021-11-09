@@ -1,5 +1,5 @@
 const mainUI = () => {
-  const list = document.getElementById('container');
+  const list = document.querySelector('.container');
   list.innerHTML = `
   <h1 class="my-5">Leaderbord</h1>
   <main class="row">
