@@ -1,21 +1,19 @@
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import game,{ getScores, submitScore } from './addScore.js';
-import displayScores from './leaderbord'
-
+import game, { getScores, submitScore } from './addScore.js';
+import displayScores from './leaderbord.js';
 
 const scoresList = document.getElementById('displayboard');
 const refreshButton = document.getElementById('refresh');
 const newScore = document.getElementById('new-score');
 const newPlayer = document.getElementById('player-name');
-const newPlayerScore = document.getElementById('player-score')
+const newPlayerScore = document.getElementById('player-score');
 
 const loadScores = () => getScores().then((scores) => {
   const html = displayScores(scores);
   if (html) {
     scoresList.innerHTML = html;
-    
-  } 
+  }
 });
 
 refreshButton.addEventListener('click', loadScores);
@@ -23,10 +21,8 @@ refreshButton.addEventListener('click', loadScores);
 window.onload = () => {
   const title = document.getElementById('page-title');
   title.innerHTML += ` - ${game}`;
-  loadScores()
+  loadScores();
 };
-
-
 
 newScore.addEventListener('submit', (event) => {
   event.preventDefault();
