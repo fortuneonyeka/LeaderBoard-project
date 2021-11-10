@@ -7,7 +7,33 @@
   <title>Leaderbord</title>
 </head>
 <body>
-   <div class="container">
-  </div>
+   <!-- <div class="container">
+  </div> -->
+
+  <main>
+    <h1 id="page-title">Leaderboard</h1>
+    <div class="grid-container">
+      <div id="scoreboard-container">
+        <div class="title-container b4">
+          <h3>Recent scores</h3>
+          <button id="refresh">Refresh</button>
+        </div>
+        <div id="displayboard">
+          <ul>
+          </ul>
+        </div>
+        
+      </div>
+      <div id="new-score-container">
+        <h3>Add your score</h3>
+        <form id="new-score">
+          <p class="error-msg hidden"><p>
+          <input id="player-name" placeholder="Your name">
+          <input id="player-score" placeholder="Your score">
+          <button class="form-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
