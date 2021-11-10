@@ -4,6 +4,10 @@ body {
   padding: 0 100px;
 }
 
+#main {
+  margin-top: 10%;
+}
+
 #page-title {
   color: rgb(66, 66, 160);
 }
