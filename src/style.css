@@ -2,14 +2,17 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   padding: 0 100px;
+  background-image: url("/Users/apple/Desktop/microverse-project/javascript-projects/LeaderBoard-project/images/2979b8a688b0a8560f4216d67c016a9b.jpeg");
 }
 
 #main {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 #page-title {
   color: rgb(66, 66, 160);
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 li {
@@ -20,7 +23,7 @@ li {
 
 li:hover {
   background-color: royalblue;
-  color: greenyellow;
+  color: rgba(245, 10, 186, 0.507);
 }
 
 h3 {
@@ -36,6 +39,7 @@ input {
   padding: 12px;
   font-size: 30px;
   width: 100%;
+  border-radius: 15px;
   box-sizing: border-box;
   box-shadow: 2px 2px black;
 }
@@ -45,8 +49,8 @@ input:hover {
 }
 
 input:focus {
-  background-color: green;
-  color: white;
+  background-color: rgb(241, 239, 224);
+  color: black;
 }
 
 #player-name {
@@ -69,6 +73,8 @@ input:focus {
   border-radius: 5px;
   border: solid 2px rgb(107, 106, 106);
   box-shadow: 2px 2px black;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 li:nth-child(odd) {
@@ -84,7 +90,7 @@ li:nth-child(odd) {
   color: black;
   box-shadow: 2px 2px black;
   margin-top: 12px;
-  border-radius: 15px 50px;
+  border-radius: 15px;
   padding: 12px;
   width: 200px;
   transition-property: background;
@@ -92,7 +98,8 @@ li:nth-child(odd) {
 }
 
 .form-submit:hover {
-  background-color:chartreuse
+  background-color:chartreuse;
+  border-radius: 15px 50px;
 }
 
 #refresh {
@@ -101,7 +108,7 @@ li:nth-child(odd) {
   background-color: white;
   box-shadow: 2px 2px black;
   margin-bottom: 7px;
-  border-radius: 15px 50px;
+  border-radius: 15px;
   padding: 12px;
   width: 200px;
   transition-property: background;
@@ -109,7 +116,8 @@ li:nth-child(odd) {
 }
 
 #refresh:hover {
-  background-color:chartreuse
+  background-color:chartreuse;
+  border-radius: 15px 50px;
 }
 
 .hidden {
