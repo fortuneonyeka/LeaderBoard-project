@@ -75,6 +75,8 @@ input:focus {
   box-shadow: 2px 2px black;
   border-radius: 15px;
   overflow: hidden;
+  height:600px; width:100%;
+  overflow:hidden; overflow-y:scroll;
 }
 
 li:nth-child(odd) {
