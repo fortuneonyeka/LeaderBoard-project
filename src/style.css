@@ -13,16 +13,14 @@ body {
   color: rgb(66, 66, 160);
   text-align: center;
   margin-bottom: 40px;
-  
 }
 
 #page-title:hover {
   color: #f66002;
-  transition-property: color;
-  transition-duration: 2s;
-  font-weight:900;
-  transition:font-weight 7s;
+  font-weight: 900;
   font-style: italic;
+  transition-property: color, font-weight, font-style;
+  transition-duration: 1s;
 }
 
 li {
@@ -45,7 +43,6 @@ input {
   display: block;
   margin-bottom: 20px;
   line-height: 20px;
-  font-size: 16px;
   padding: 12px;
   font-size: 30px;
   width: 100%;
@@ -80,14 +77,13 @@ input:focus {
 }
 
 #displayboard {
-  border-radius: 5px;
   border: solid 2px rgb(107, 106, 106);
   box-shadow: 2px 2px black;
   border-radius: 15px;
+  height: 600px;
+  width: 100%;
   overflow: hidden;
-  height:600px; width:100%;
-  overflow:hidden; 
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
 li:nth-child(odd) {
@@ -98,7 +94,6 @@ li:nth-child(odd) {
   float: right;
   background: #fd7c2a;
   margin: 0;
-  padding: 3px;
   background-color: white;
   color: black;
   box-shadow: 2px 2px black;
@@ -107,11 +102,11 @@ li:nth-child(odd) {
   padding: 12px;
   width: 200px;
   transition-property: background;
-    transition-duration: 2s;
+  transition-duration: 2s;
 }
 
 .form-submit:hover {
-  background-color:chartreuse;
+  background-color: chartreuse;
   border-radius: 15px 50px;
 }
 
@@ -125,11 +120,11 @@ li:nth-child(odd) {
   padding: 12px;
   width: 200px;
   transition-property: background;
-    transition-duration: 2s;
+  transition-duration: 2s;
 }
 
 #refresh:hover {
-  background-color:chartreuse;
+  background-color: chartreuse;
   border-radius: 15px 50px;
 }
 
