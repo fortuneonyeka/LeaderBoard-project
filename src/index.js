@@ -29,8 +29,8 @@ newScore.addEventListener('submit', (event) => {
   const player = newPlayer.value;
   const score = newPlayerScore.value;
   const scoreError = document.querySelector('.error-msg');
-  
-  if(player && score && !Number.isNaN(score)){
+
+  if (player && score && !Number.isNaN(score)) {
     scoreError.classList.remove('hidden');
     submitScore(player, parseInt(score, 10)).then(() => {
       newPlayerScore.value = '';
