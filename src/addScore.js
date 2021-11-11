@@ -1,4 +1,4 @@
-import scores from './leaderbord'
+// import scores from './leaderbord'
 
 export default 'Olympics';
 const gameId = 'SJ6sb5XLeWomNhN0de2m';
@@ -7,7 +7,8 @@ const requestUrl = `${baseUrl}/games/${gameId}/scores`;
 
 
 const requestHeader = {
-  'Content-type': 'application/json; charset=UTF-8',
+  Accept: 'application/json',
+  'Content-Type': 'application/json','Content-type': 'application/json; charset=UTF-8',
 };
 
 
@@ -22,14 +23,12 @@ export const getScores = async () => {
 
 
 
-// export const submitScore = async (user, score) =>  {
-//   const request = await fetch(requestUrl),
-//   body = JSON.stringify({ user, score })
-
-// }
-
-export const submitScore = async (user, score) => fetch(requestUrl, {
+export const submitScore = async (user, score) =>  {
+  const request = await fetch(requestUrl, {
   method: 'POST',
   body: JSON.stringify({ user, score }),
-  headers: requestHeader,
-}).then((response) => response.json());
+  headers: {'Content-type': 'application/json; charset=UTF-8'},
+});
+const response = await request.json()
+  return response
+}
