@@ -2,24 +2,36 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   padding: 0 100px;
+  background-image: url("/images/2979b8a688b0a8560f4216d67c016a9b.jpeg");
 }
 
 #main {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 #page-title {
   color: rgb(66, 66, 160);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#page-title:hover {
+  color: #f66002;
+  font-weight: 900;
+  font-style: italic;
+  transition-property: color, font-weight, font-style;
+  transition-duration: 1s;
 }
 
 li {
   list-style: none;
-  padding: 12px;
+  padding: 20px;
+  font-size: 30px;
 }
 
 li:hover {
   background-color: royalblue;
-  color: greenyellow;
+  color: rgba(245, 10, 186, 0.507);
 }
 
 h3 {
@@ -31,9 +43,10 @@ input {
   display: block;
   margin-bottom: 20px;
   line-height: 20px;
-  font-size: 16px;
-  padding: 0 5px;
+  padding: 12px;
+  font-size: 30px;
   width: 100%;
+  border-radius: 15px;
   box-sizing: border-box;
   box-shadow: 2px 2px black;
 }
@@ -43,8 +56,8 @@ input:hover {
 }
 
 input:focus {
-  background-color: green;
-  color: white;
+  background-color: rgb(241, 239, 224);
+  color: black;
 }
 
 #player-name {
@@ -64,9 +77,13 @@ input:focus {
 }
 
 #displayboard {
-  border-radius: 5px;
   border: solid 2px rgb(107, 106, 106);
   box-shadow: 2px 2px black;
+  border-radius: 15px;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 li:nth-child(odd) {
@@ -75,19 +92,40 @@ li:nth-child(odd) {
 
 .form-submit {
   float: right;
+  background: #fd7c2a;
   margin: 0;
-  padding: 3px;
   background-color: white;
   color: black;
   box-shadow: 2px 2px black;
   margin-top: 12px;
+  border-radius: 15px;
+  padding: 12px;
+  width: 200px;
+  transition-property: background;
+  transition-duration: 2s;
+}
+
+.form-submit:hover {
+  background-color: chartreuse;
+  border-radius: 15px 50px;
 }
 
 #refresh {
+  background: #fd7c2a;
   color: black;
   background-color: white;
   box-shadow: 2px 2px black;
   margin-bottom: 7px;
+  border-radius: 15px;
+  padding: 12px;
+  width: 200px;
+  transition-property: background;
+  transition-duration: 2s;
+}
+
+#refresh:hover {
+  background-color: chartreuse;
+  border-radius: 15px 50px;
 }
 
 .hidden {
